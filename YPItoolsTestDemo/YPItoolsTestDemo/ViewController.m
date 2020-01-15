@@ -22,7 +22,13 @@
     
 //    [self checkNetwork];
     
-    [self testNetworkUtil];
+//    [self testNetworkUtil];
+    
+    [self getDeviceinfo];
+}
+
+- (void)getDeviceinfo{
+    NSLog(@"%@ %@ %@ %@",[YPDeviceInfoUtil retrivePhoneMode],[YPDeviceInfoUtil retriveAppVersionCode],[YPDeviceInfoUtil retriveAppVersion],[YPDeviceInfoUtil retriveAppName]);
 }
 
 - (void)testNetworkUtil{
